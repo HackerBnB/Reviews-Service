@@ -5,7 +5,7 @@ const path = require('path');
 const routes = require('./../routes');
 var bodyParser = require('body-parser');
 
-var cluster = require('cluster');
+// var cluster = require('cluster');
 
 const app = express();
 
@@ -13,12 +13,12 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use(bodyParser.json());
 
-if (cluster.isMaster) {
- const cpuCount = require('os').cpus().length;
- for (let i = 0; i < cpuCount; i += 1) {
-   cluster.fork();
- }
-} else {
+// if (cluster.isMaster) {
+//  const cpuCount = require('os').cpus().length;
+//  for (let i = 0; i < cpuCount; i += 1) {
+//    cluster.fork();
+//  }
+// } else {
 
 app.set('port', process.env.PORT || 3002);
 
@@ -41,7 +41,7 @@ app.get('/rooms/:roomId', (req, res) => {
 
 app.use('/api', routes);
 
-}
+// }
 module.exports = app;
 
 // 
