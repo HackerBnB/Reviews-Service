@@ -13,6 +13,7 @@
     "react-dev": "webpack -d --watch",
     "test": "jest --forceExit",
     "lint": "eslint client/src",
+    "grunt": "grunt-aws-s3",
     "start:pro": "node generate.js && webpack -d && node server/"
   },
   "dependencies": {

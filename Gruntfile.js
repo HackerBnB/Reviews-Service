@@ -9,7 +9,7 @@ module.exports = function (grunt) {
       },
       dist: {
         options: {
-          bucket: "airfecuserimages"
+          bucket: "bundleclient"
         },
         files: [
           {

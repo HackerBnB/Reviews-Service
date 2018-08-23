@@ -2,8 +2,8 @@ const { Pool } = require('pg');
 
 const config = {
   host: 'ec2-54-193-12-133.us-west-1.compute.amazonaws.com',
-  user: 'server-user',
-  password: 'seruse',
+  user: 'ec2-user',
+  password: 'password',
   database: 'homelyre',
   port: 5432,
 };
