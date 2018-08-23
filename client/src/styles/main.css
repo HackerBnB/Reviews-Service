@@ -1,0 +1,252 @@
+body {
+  --main-bg-color: #fff;
+  --main-font-color: #4a4a4a;
+  --second-color: #ccd1cb;
+  --third-color: #ff2559;
+  --fourth-color: #007c87;
+
+  background-color: var(--main-bg-color);
+  color: var(--main-font-color);
+  font-family: Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.border {
+  border-bottom: 1px solid var(--second-color);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/**********RATING COMPONENT**********/
+
+.rating-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.rating-left {
+  flex: 1;
+}
+
+.rating-right {
+  flex: 1;
+}
+
+.star {
+  color: var(--fourth-color);
+  margin-right: 8px;
+}
+
+.rating-star-container {
+  display: flex;
+}
+
+
+
+/**********SEARCH COMPONENT**********/
+
+.search-container {
+  display: flex;
+  width: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  justify-content: space-between;
+}
+
+.total-rating-container {
+  display: flex;
+  flex: 1 0 auto;
+  align-items: center;
+}
+
+.search-bar-container {
+  flex: 1 0 auto;
+}
+
+.review-length-container {
+  font-size: 20px;
+  font-weight: bolder;
+  margin-right: 1rem;
+}
+
+.space-right {
+  margin: 6px;
+}
+
+.star-container {
+  display: flex;
+  margin-right: 1rem;
+}
+
+.search-mag-glass {
+  border-bottom: 1px solid var(--second-color);
+  border-top: 1px solid var(--second-color);
+  border-left: 1px solid var(--second-color);
+}
+
+.search-bar-area {
+  margin-left: auto;
+  border: 1px solid var(--second-color);
+  padding: 8px;
+}
+
+.search-bar-area-selected {
+  margin-left: auto;
+  border: 1px solid var(--fourth-color);
+  padding: 8px;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  margin-left: 6px;
+}
+
+/**********REVIEW COMPONENT**********/
+
+.review-container {
+  display: flex;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.user-date-container {
+  margin-left: 10px;
+}
+
+.username {
+  font-weight: bold;
+}
+
+.description {
+  line-height: 22px;
+  font-size: 16px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+}
+
+.user-image {
+  border-radius: 50%;
+  height: 60px;
+  width: auto;
+}
+
+.read-more {
+  color: var(--fourth-color);
+  border: none;
+  font-size: 14px;
+  background: transparent;
+}
+
+.mag-icon {
+  color: #9a9c9e;
+  background: transparent;
+}
+
+/****BACK TO REVIEWS SECTION****/
+
+.back-to-reviews-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.num-of-searches-container {
+  width: 50%;
+}
+
+.back-to-reviews-button {
+  width: 50%;
+}
+
+.back-to-reviews {
+  color: #00858c;
+  border: none;
+  font-weight: bold;
+  font-size: 14px;
+  background: transparent;
+}
+
+/*******PAGINATION*******/
+/*.non-selected-page {*/
+.page button {
+  color: var(--fourth-color);
+  border-radius: 16px;
+  border: none;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  outline: none;
+  margin-right: 2rem;
+  font-size: 14px;
+  background: transparent;
+}
+
+/*.selected-page {*/
+.page.active button {
+  color: white;
+  background-color: var(--fourth-color);
+}
+
+.page {
+  display: inline;
+  list-style-type: none;
+  background: transparent;
+}
+
+.angle-right-list {
+  display: inline;
+  list-style-type: none;
+  background: transparent;
+}
+
+.angle-right-icon {
+  display: inline;
+  list-style-type: none;
+  border: 1px solid var(--fourth-color);
+  border-radius: 16px;
+  color: var(--fourth-color);
+  border-radius: 16px;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  outline: none;
+  margin-right: 2rem;
+  font-size: 14px;
+  background: transparent;
+}
+
+.ul-padding {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.rating-container-half {
+  display: flex;
+  justify-content: space-between;
+  flex: 1 0 auto;
+}
+
+.rating-text-half {
+  margin-right: 1rem;
+}
+
+@media(max-width: 575px) {
+  .rating-container {
+    flex-direction: column;
+  }
+  .search-container {
+    flex-direction: column;
+  }
+  .total-rating-container {
+    padding-bottom: 1rem;
+  }
+}
