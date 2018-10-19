@@ -1,53 +1,85 @@
-# Project Name
+# Vacay
 
-> Project description
 
-## CRUD
+> This project is intended to work as a full-stack microservice integrated with my team's microservices to form a complete Vacay single item page.
 
-READ
-GET reviews by id: '/rooms/:id/reviews'
 
-UPDATE
-PUT reviews by id: '/rooms/:id/reviews'
-
-DELETE
-DELETE reviews by id: '/rooms/:id/reviews'
-
-POST
-POST reviews by id: '/rooms/:id/reviews'
-
-## Related Projects
-
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
 
 ## Table of Contents
 
-1. [Usage](#Usage)
-1. [Requirements](#requirements)
-1. [Development](#development)
+1.  [Usage](#Usage)
+1.  [Requirements](#requirements)
+1.  [Development](#development)
 
 ## Usage
 
-> Some usage instructions
+
+
+## Technology stack
+
+> A full stack react app built with the philosophy of continuously-integrated, test-driven development.
+
+- CSS
+- HTML5
+- React.js
+- Node.js
+- Express
+- PostgreSQL
+- Redis
+
+
+- Jest
+- CircleCI
+
+- Trello 
 
 ## Requirements
 
 An `nvmrc` file is included if using [nvm](https://github.com/creationix/nvm).
 
-- Node 6.13.0
-- etc
-
-## Development
+- Node v8.10.0
+- npm v3.5.2
+- Postgres 
 
 ### Installing Dependencies
 
 From within the root directory:
 
 ```sh
-npm install -g webpack
 npm install
 ```
 
+## Development
+
+From within the root directory:
+
+To seed database (seeded- not required)
+
+```sh
+npm db:seed
+```
+
+To run server
+
+```sh
+npm start
+```
+
+To run dev enviroment/webpack
+
+```sh
+npm run react-dev
+```
+
+To run tests
+
+```sh
+npm test
+```
+
+## CRUD API
+
+GET /rooms/:id/reviews
+POST /rooms/:id/reviews
+PUT /rooms/:id/reviews
+DELETE /rooms/:id/reviews
