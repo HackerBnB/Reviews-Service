@@ -14,5 +14,3 @@ router.delete('/rooms/:roomId/users', controller.reviews.deleteUsers);
 
 module.exports = router;
 
-
-// 
